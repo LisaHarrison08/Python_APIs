@@ -1,28 +1,25 @@
 # Python API - What's the Weather Like?
 
-## Background
-
-Whether financial, political, or social -- data's true power lies in its ability to answer questions definitively. Using Python requests, APIs, and JSON traversals answer the fundamental question: "What's the weather like as we approach the equator?"
-
-Now, we know what you may be thinking: _"Duh. It gets hotter..."_
-
-But, if pressed, how would you **prove** it?
+Whether financial, political, or social -- data's true power lies in its ability to answer questions definitively. 
+Using Python requests, APIs, and JSON traversals to answer the fundamental question: "What's the weather like as we approach the equator?"
 
 ![Equator](Images/equatorsign.png)
 
 
 ## Part I - WeatherPy
 
-Created a Python script to visualize the weather of 500+ cities across the world of varying distance from the equator. Utilizing a [simple Python library](https://pypi.python.org/pypi/citipy), the [OpenWeatherMap API](https://openweathermap.org/api), and a little common sense to create a representative model of weather across world cities.
+Created a Python script to visualize the weather of 500+ cities across the world of varying distance from the equator. 
 
-The first requirement is to create a series of scatter plots to showcase the following relationships:
+Utilized a [simple Python library](https://pypi.python.org/pypi/citipy), and the [OpenWeatherMap API](https://openweathermap.org/api),to create a representative model of weather across world cities.
+
+From the data gathered, a series of scatter plots were generated to showcase the following relationships:
 
 * Temperature (F) vs. Latitude
 * Humidity (%) vs. Latitude
 * Cloudiness (%) vs. Latitude
 * Wind Speed (mph) vs. Latitude
 
-The second requirement is to run linear regression on each relationship, only this time separating them into Northern Hemisphere (greater than or equal to 0 degrees latitude) and Southern Hemisphere (less than 0 degrees latitude):
+The data was separated into Northern Hemisphere (greater than or equal to 0 degrees latitude) and Southern Hemisphere (less than 0 degrees latitude) and linear regression was used to model the relationship:
 
 * Northern Hemisphere - Temperature (F) vs. Latitude
 * Southern Hemisphere - Temperature (F) vs. Latitude
@@ -33,7 +30,7 @@ The second requirement is to run linear regression on each relationship, only th
 * Northern Hemisphere - Wind Speed (mph) vs. Latitude
 * Southern Hemisphere - Wind Speed (mph) vs. Latitude
 
-After each pair of plots explained what the linear regression is modeling such as any relationships noticed and any other analysis.
+After each pair of plots is a brief analysis of the linear regression model, referencing any noticeable relationships.
 
 The final notebook:
 
